@@ -1,0 +1,108 @@
+html body{
+  margin: 0 auto;
+  padding: 0;
+  background: #ffffff;
+  font-family:'Franklin Gothic Book', 'Arial Narrow', Arial, sans-serif
+}
+
+.lift-container{
+  display: flex;
+  width:180px;
+  height: 805px; 
+  margin : 0 auto ;
+  justify-content: center;
+  top: 0;
+  left:0;
+  right: 0;
+  position: relative;
+  background: #cacaca;
+}
+.lift {
+margin-left: 20px;
+width:60px;
+height: 76px;
+position: absolute;
+margin-top: 720px; 
+padding :5px;
+overflow: hidden;
+background: linear-gradient( 120deg, #787878 0%, #b5b5b5 25%,#e3e3e3  50%,#b5b5b5 75% ,#787878 100%);
+}
+
+table{
+ background-color: rgb(207, 207, 207);
+ margin-right: 80%;
+ height: 805px;
+ width: 20%;
+ text-align: center;
+ 
+}
+
+tr{
+
+background-color: #e6e6e6;
+}
+
+td {
+  border: 1px solid rgb(184, 184, 184); 
+  font-size: 8px;
+  padding-top: 5px;
+  color: aliceblue;
+  border-radius: 20px;
+  background: #036AE3;
+  width:20px;
+  height: 15px;
+  text-align: center;
+  display: inline-block;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.door-right{
+  
+  width: 28px;
+  height: 76px;
+  background: linear-gradient( 120deg, #787878 0%, #b5b5b5 25%,#e3e3e3  50%,#b5b5b5 75% ,#787878 100%);
+  font-weight: bold;
+  position: relative;
+  float: right;
+  border:1px solid rgb(0, 0, 0);
+} 
+
+
+.door-right-open{
+  animation: move-right 5s ;
+  animation-delay: 1s;
+
+} 
+
+
+.door-left{
+  width:28px;
+  height: 76px;
+  background: linear-gradient(240deg, #787878 0%, #b5b5b5 25%,#e3e3e3  50%,#b5b5b5 75% ,#787878 100%);
+  font-weight: bold;
+  position: relative;
+  float: left;
+  border:1px solid rgb(0, 0, 0);
+
+}
+.door-left-open{
+  animation: move-left 5s  ;
+  animation-delay: 1s;
+}
+
+@keyframes move-right {
+  0% {left: 0px;}
+  25% {left: 30px;}
+  50%{left: 30px;}
+  100% {left: 0px;}
+
+}
+
+@keyframes move-left {
+  0% {left: 0px;}
+  25% {left: -30px;}
+
+  50% {left: -30px;}
+  100%{left: 0px;}
+}
